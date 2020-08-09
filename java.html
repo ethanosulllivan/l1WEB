@@ -1,0 +1,35 @@
+<!doctype html>
+
+<head>
+    <title>alien recreation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        var answers = ['shoot everything', 'climb tree', 'flamethrower', 'dont livent', 'if you die im not coming to the funeral', 'stay alive', 'grenades']
+
+        function testing() {
+            var rand = Math.floor(Math.random() * answers.length)
+            document.getElementById('text').innerHTML = answers[rand];
+        }
+
+        function contact() {
+            var rand = Math.floor(Math.random() * answers.length)
+            document.getElementById('text').innerHTML = 'dickkickem@hotmale.ua';
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="guide.html">SURVIVAL GUIDE</a>
+            <a href="java.html">CONTACT INFO</a>
+        </nav>
+        <section>
+            <button onclick='testing()'>PANIC BUTTON</button>
+            <button onclick='contact()'>CONTACT</button>
+            <p id="text"></p>
+        </section>
+    </div>
+</body>
